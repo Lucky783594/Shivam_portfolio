@@ -2,7 +2,7 @@ import { FiArrowRight, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import { Link } from 'react-scroll'
 
 const socialLinks = [
-  { href: 'https://github.com/Lucky783594', icon: FiGithub, label: 'GitHub' },
+  { href: 'https://github.com/shivamdwivedi2442', icon: FiGithub, label: 'GitHub' },
   { href: 'https://www.linkedin.com/in/shivam-dwivedi-08b45b334/', icon: FiLinkedin, label: 'LinkedIn' },
   { href: 'mailto:4u.fearedits@gmail.com', icon: FiMail, label: 'Email', email: true }
 ]

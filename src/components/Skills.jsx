@@ -22,7 +22,7 @@ export default function Skills() {
     },
     'Other Skills': {
       color: 'from-emerald-400 to-emerald-600',
-      items: ['Problem Solving', 'Deployment']
+      items: ['Problem Solving', 'Deployment' , 'NEXT JS']
     }
   }
 

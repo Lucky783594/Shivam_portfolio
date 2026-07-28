@@ -32,10 +32,9 @@ export default function App() {
         <main>
           <Hero />
           <About />
-          {/* <Projects /> */}
+          <Projects />
           <Skills />
-          {/* <Experience />
-          <Certifications /> */}
+          <Experience />
           <Contact />
         </main>
 

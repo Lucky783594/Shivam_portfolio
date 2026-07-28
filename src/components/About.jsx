@@ -38,7 +38,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 animate-slideInRight">
+          {/* <div className="grid grid-cols-2 gap-6 animate-slideInRight">
             <div className="card card-hover text-center p-8">
               <div className="text-4xl font-display font-bold gradient-text mb-2">4+</div>
               <p className="text-gray-600 dark:text-gray-400 font-medium">Real-world Projects</p>
@@ -55,7 +55,7 @@ export default function About() {
               <div className="text-4xl font-display font-bold gradient-text mb-2">8.47</div>
               <p className="text-gray-600 dark:text-gray-400 font-medium">College CGPA</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

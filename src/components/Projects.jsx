@@ -24,22 +24,22 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'Debugging Challenge Website',
-      description: 'Responsive web application for college Debugging Challenge event. Designed clean, user-friendly interface centralizing event information with seamless navigation to HackerRank contest links. Focused on responsive design and smooth navigation.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      image: '🐛',
-      link: 'https://www.instagram.com/lucky47ig',
-      github: 'https://github.com/Lucky783594/',
+      title: 'Cine Hub — Movie Discovery Platform',
+      description: 'Full-stack movie discovery web application integrating TMDB API for real-time trending, top-rated, and genre-based film data. Built dynamic industry-wise browsing (Hollywood, Bollywood, Tollywood, South Indian cinema) with animated capsule filters, server-side rendering for SEO (dynamic sitemaps, JSON-LD schema, Open Graph tags), and fully responsive UI with smooth micro-interactions across devices.',
+      tech: ['Next.js', 'React', 'JavaScript', 'Tailwind CSS', 'Framer Motion', 'TMDB API'],
+      image: '📺',
+      link: 'https://cinehub-nu-two.vercel.app/',
+      github: 'https://github.com/shivamdwivedi2442/movie-app',
       featured: false
     },
     {
       id: 4,
-      title: 'YouTube Clone',
-      description: 'Responsive YouTube Clone using React.js. Integrated YouTube Data API v3 to fetch real-time videos and channels. Built reusable components, implemented dynamic routing, and created a clean interface replicating core YouTube experience.',
-      tech: ['React.js', 'YouTube API', 'React Router', 'Axios', 'CSS3'],
-      image: '📺',
-      link: '',
-      github: 'https://github.com/Lucky783594',
+      title: 'Daily Ledger - Productivity & Task Management',
+      description: 'Developed a responsive and clean task-management web application designed to optimize daily workflow scheduling. Focused on creating an intuitive, clutter-free user interface utilizing semantic HTML5 structure, modular CSS layout, and efficient JavaScript DOM manipulation to manage tasks seamlessly.',
+      tech: ['React.js', 'Tailwind css', 'javascript', 'CSS3', 'Next.js'],
+      image: '📚',
+      link: 'https://to-do-app-umber-phi.vercel.app/',
+      github: 'https://github.com/shivamdwivedi2442/to-do-app',
       featured: false
     }
   ]
@@ -49,7 +49,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <h2 className="section-title">Featured Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
           {projects.filter(p => p.featured).map((project, idx) => (
             <div
               key={project.id}
@@ -101,10 +101,10 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mb-8">
-          <h3 className="text-2xl font-display font-bold mb-6 text-gray-900 dark:text-white">Other Projects</h3>
+          {/* <h3 className="text-2xl font-display font-bold mb-6 text-gray-900 dark:text-white">Other Projects</h3> */}
           <div className="grid md:grid-cols-2 gap-6">
             {projects.filter(p => !p.featured).map((project, idx) => (
               <div
@@ -134,13 +134,15 @@ export default function Projects() {
 
                 <div className="flex gap-3">
                   {project.link && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-fuchsia-600 dark:text-fuchsia-400 hover:text-fuchsia-700">
-                      <FiExternalLink size={18} />
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-fuchsia-600 dark:text-fuchsia-400 hover:text-fuchsia-700 dark:hover:text-fuchsia-300 font-medium transition-colors"
+                    >
+                      Live Demo<FiExternalLink size={18} />
                     </a>
                   )}
                   {project.github && (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-fuchsia-600 dark:text-fuchsia-400 hover:text-fuchsia-700">
-                      <FiGithub size={18} />
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-fuchsia-600 dark:text-fuchsia-400 hover:text-fuchsia-700 dark:hover:text-fuchsia-300 font-medium transition-colors"
+                    >
+                      GitHub<FiGithub size={18} />
                     </a>
                   )}
                 </div>

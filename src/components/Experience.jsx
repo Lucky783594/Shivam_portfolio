@@ -38,7 +38,7 @@ export default function Experience() {
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
                 <div className="hidden md:flex flex-col items-center md:w-1/2">
-                  <div className="w-6 h-6 rounded-full bg-white dark:bg-dark-card border-4 border-fuchsia-500 widh shadow-lg"></div>
+                  <div className="w-6 h-6 rounded-full bg-white dark:bg-dark-card border-4 border-fuchsia-600 widh shadow-lg"></div>
                 </div>
 
                 <div className="md:w-1/2 md:relative md:top-0 md:left-0 pl-8 md:pl-0">
