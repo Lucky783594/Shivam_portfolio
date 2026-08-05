@@ -4,26 +4,16 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Prescripto - Doctor Appointment Booking',
-      description: 'Developed a full-stack doctor appointment booking platform. Implemented specialty-based doctor filtering, date and time-slot selection functionality, and dynamic doctor profile pages for streamlined healthcare discovery.',
-      tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
-      image: '🏥',
-      link: 'https://prescripto-frontend-7no6.onrender.com/contact',
-      github: '',
+      title: 'SwiftCart: Multi-Portal E-Commerce Ecosystem',
+      description: 'A full-stack e-commerce ecosystem featuring robust JWT authentication and a personalized product recommendation engine. The platform seamlessly integrates three dedicated portals: a dynamic buyer storefront, a comprehensive seller dashboard for real-time sales and profit analytics, and a streamlined delivery management app for tracking order fulfillment and logistics earnings.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT', 'Vercel'],
+      image: '🛒',
+      link: 'https://swiftcart-ashen.vercel.app',
+      github: 'https://github.com/shivamdwivedi2442/swiftcart',
       featured: true
     },
     {
       id: 2,
-      title: 'MERN E-Learning Platform',
-      description: 'Full-featured e-learning platform with role-based access for Admin, Instructor, and Student users. Built RESTful APIs for course management, enrollment, quizzes, and certificate generation. Automated assessments and real-time progress monitoring.',
-      tech: ['MERN Stack', 'JWT Auth', 'MongoDB', 'REST APIs'],
-      image: '📚',
-      link: '',
-      github: 'https://www.instagram.com/lucky47ig',
-      featured: true
-    },
-    {
-      id: 3,
       title: 'Cine Hub — Movie Discovery Platform',
       description: 'Full-stack movie discovery web application integrating TMDB API for real-time trending, top-rated, and genre-based film data. Built dynamic industry-wise browsing (Hollywood, Bollywood, Tollywood, South Indian cinema) with animated capsule filters, server-side rendering for SEO (dynamic sitemaps, JSON-LD schema, Open Graph tags), and fully responsive UI with smooth micro-interactions across devices.',
       tech: ['Next.js', 'React', 'JavaScript', 'Tailwind CSS', 'Framer Motion', 'TMDB API'],
@@ -33,7 +23,7 @@ export default function Projects() {
       featured: false
     },
     {
-      id: 4,
+      id: 3,
       title: 'Daily Ledger - Productivity & Task Management',
       description: 'Developed a responsive and clean task-management web application designed to optimize daily workflow scheduling. Focused on creating an intuitive, clutter-free user interface utilizing semantic HTML5 structure, modular CSS layout, and efficient JavaScript DOM manipulation to manage tasks seamlessly.',
       tech: ['React.js', 'Tailwind css', 'javascript', 'CSS3', 'Next.js'],
@@ -49,7 +39,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <h2 className="section-title">Featured Projects</h2>
 
-        {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {projects.filter(p => p.featured).map((project, idx) => (
             <div
               key={project.id}
@@ -101,10 +91,10 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
 
         <div className="mb-8">
-          {/* <h3 className="text-2xl font-display font-bold mb-6 text-gray-900 dark:text-white">Other Projects</h3> */}
+          <h3 className="text-2xl font-display font-bold mb-6 text-gray-900 dark:text-white">Other Projects</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {projects.filter(p => !p.featured).map((project, idx) => (
               <div
