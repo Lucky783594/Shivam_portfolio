@@ -1,4 +1,7 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
+import TelegramQuizBotIllustration from './assets/TelegramQuizBotIllustration'
+import SwiftCartIllustration from './assets/SwiftCartIllustration';
+
 
 export default function Projects() {
   const projects = [
@@ -7,13 +10,25 @@ export default function Projects() {
       title: 'SwiftCart: Multi-Portal E-Commerce Ecosystem',
       description: 'A full-stack e-commerce ecosystem featuring robust JWT authentication and a personalized product recommendation engine. The platform seamlessly integrates three dedicated portals: a dynamic buyer storefront, a comprehensive seller dashboard for real-time sales and profit analytics, and a streamlined delivery management app for tracking order fulfillment and logistics earnings.',
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT', 'Vercel'],
-      image: '🛒',
+      image: (<div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[100px] lg:h-[100px]">
+        <SwiftCartIllustration className="w-full h-full" />
+      </div>),
       link: 'https://swiftcart-ashen.vercel.app',
       github: 'https://github.com/shivamdwivedi2442/swiftcart',
       featured: true
     },
     {
       id: 2,
+      title: 'Telegram Quiz Bot — Multi-Tenant Quiz Automation SaaS',
+      description: 'A multi-tenant SaaS platform automating Telegram quizzes, featuring secure JWT authentication and AI-powered MCQ extraction from images via Google Gemini. The platform seamlessly integrates a smart scheduling engine for recurring polls, a real-time analytics dashboard tracking per-student performance, and a dedicated leaderboard for daily and weekly rankings.',
+      tech: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Telegraf', 'Google Gemini API', 'JWT'],
+      image: (<TelegramQuizBotIllustration className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[100px] lg:h-[100px]" />),
+      link: 'https://telegram-quiz-bot-mu.vercel.app',
+      github: 'https://github.com/shivamdwivedi2442/telegram-quiz-bot',
+      featured: true
+    },
+    {
+      id: 3,
       title: 'Cine Hub — Movie Discovery Platform',
       description: 'Full-stack movie discovery web application integrating TMDB API for real-time trending, top-rated, and genre-based film data. Built dynamic industry-wise browsing (Hollywood, Bollywood, Tollywood, South Indian cinema) with animated capsule filters, server-side rendering for SEO (dynamic sitemaps, JSON-LD schema, Open Graph tags), and fully responsive UI with smooth micro-interactions across devices.',
       tech: ['Next.js', 'React', 'JavaScript', 'Tailwind CSS', 'Framer Motion', 'TMDB API'],
@@ -23,7 +38,7 @@ export default function Projects() {
       featured: false
     },
     {
-      id: 3,
+      id: 4,
       title: 'Daily Ledger - Productivity & Task Management',
       description: 'Developed a responsive and clean task-management web application designed to optimize daily workflow scheduling. Focused on creating an intuitive, clutter-free user interface utilizing semantic HTML5 structure, modular CSS layout, and efficient JavaScript DOM manipulation to manage tasks seamlessly.',
       tech: ['React.js', 'Tailwind css', 'javascript', 'CSS3', 'Next.js'],
@@ -46,7 +61,7 @@ export default function Projects() {
               className="card card-hover group overflow-hidden animate-slideUp"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <div className="text-6xl mb-4">{project.image}</div>
+              <div>{project.image}</div>
 
               <h3 className="text-2xl font-display font-bold mb-3 text-gray-900 dark:text-white group-hover:text-fuchsia-600 dark:group-hover:text-fuchsia-400 transition-colors">
                 {project.title}

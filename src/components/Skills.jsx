@@ -1,28 +1,31 @@
+import { FrontendIcon, BackendIcon, DatabaseIcon, LanguagesIcon, ToolsIcon, OtherSkillsIcon } from './assets/SkillCategoryIcons';
+
+
 export default function Skills() {
   const skills = {
     'Frontend': {
-      color: 'from-teal-400 to-teal-600',
+      icon: (<FrontendIcon className="w-14 h-14" />),
       items: ['React.js', 'HTML5', 'CSS3', 'JavaScript (ES6+)', 'Tailwind CSS', 'Responsive Design']
     },
     'Backend': {
-      color: 'from-amber-400 to-amber-600',
+      icon: (<BackendIcon className="w-14 h-14" />),
       items: ['Express.js', 'JWT Authentication', 'Middleware']
     },
     'Database': {
-      color: 'from-violet-400 to-violet-600',
+      icon: (<DatabaseIcon className="w-14 h-14" />),
       items: ['MongoDB', 'Database Design']
     },
     'Languages': {
-      color: 'from-rose-400 to-rose-600',
+      icon: (<LanguagesIcon className="w-14 h-14" />),
       items: ['JavaScript', 'HTML', 'CSS']
     },
     'Tools & Platforms': {
-      color: 'from-sky-400 to-sky-600',
-      items: ['Git', 'GitHub', 'VS Code', 'Postman', 'Render', 'vercel', 'MongoDB Atlas']
+      icon: (<ToolsIcon className="w-14 h-14" />),
+      items: ['Git', 'GitHub', 'Docker', 'Redis', 'VS Code', 'Postman', 'Render', 'vercel', 'MongoDB Atlas']
     },
     'Other Skills': {
-      color: 'from-emerald-400 to-emerald-600',
-      items: ['Problem Solving', 'Deployment' , 'NEXT JS']
+      icon: (<OtherSkillsIcon className="w-14 h-14" />),
+      items: ['Problem Solving', 'Deployment', 'NEXT JS']
     }
   }
 
@@ -45,7 +48,9 @@ export default function Skills() {
               className="card card-hover group animate-slideUp"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <div className={`inline-block w-12 h-12 rounded-lg bg-gradient-to-r ${data.color} mb-4 group-hover:scale-110 transition-transform`}></div>
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-14 md:h-14 lg:w-16 lg:h-16 ...">
+                {data.icon}
+              </div>
 
               <h3 className="text-xl font-display font-bold mb-4 text-gray-900 dark:text-white">
                 {category}

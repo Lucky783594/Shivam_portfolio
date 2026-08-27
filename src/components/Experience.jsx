@@ -1,18 +1,32 @@
 export default function Experience() {
   const experience = [
     {
-      period: 'March 2026',
+      period: 'MARCH 2026',
       title: 'MERN Full Stack Developer',
       company: 'Learning',
-      description: 'Currently undergoing Full Stack Developer Learning strengthening my skills in the MERN Stack, Java, SQL, and modern software development through hands-on projects.',
-      type: 'current'
+      description: 'Started learning the MERN stack from scratch — building a strong foundation in JavaScript, React.js, Node.js, Express.js, and MongoDB through structured coursework and hands-on projects.',
+      type: 'started'
     },
     {
-      period: 'July 2026 - Present',
-      title: 'Bsc. Computer Science',
+      period: 'JULY 2026 - PRESENT',
+      title: 'Bsc Computer Science',
       company: 'Learning',
-      description: 'Currently undergoing Java Developer learning, strengthening my skills in the MERN Stack, Java, SQL, and modern software development through hands-on projects.',
+      description: 'Studying core first-year computer science fundamentals — Programming in C/C++, Data Structures, Discrete Mathematics, Digital Logic Design, and Computer Organization — alongside self-driven MERN stack and Java development training.',
       type: 'education'
+    },
+    {
+      period: 'AUGUST 2026',
+      title: 'MERN Full Stack Developer',
+      company: 'Completed',
+      description: 'Completed the MERN Full Stack Developer program, gaining hands-on experience building end-to-end web applications with React.js, Node.js, Express.js, and MongoDB.',
+      type: 'coursecompleted'
+    },
+    {
+      period: 'AUGUST 2026 - PRESENT',
+      title: 'Frontend Developer Intern',
+      company: 'She Can Foundation',
+      description: 'Currently working as a Frontend Developer Intern, building and maintaining responsive, accessible UI features and integrating REST APIs in a production-style workflow.',
+      type: 'current'
     }
   ]
 
@@ -20,6 +34,16 @@ export default function Experience() {
     current: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400',
     internship: 'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400',
     education: 'bg-fuchsia-100 dark:bg-fuchsia-900/30 text-fuchsia-700 dark:text-fuchsia-400',
+    coursecompleted: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400',
+    started: 'bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400'
+  }
+
+  const badgeLabels = {
+    current: 'Current',
+    internship: 'Internship',
+    education: 'Education',
+    coursecompleted: 'Completed',
+    started: 'Started'
   }
 
   return (
@@ -45,7 +69,7 @@ export default function Experience() {
                   <div className="card card-hover group">
                     <div className="inline-block mb-3">
                       <span className={`px-4 py-1 text-sm font-mono font-semibold rounded-full ${badgeStyles[item.type]}`}>
-                        {item.type === 'current' ? 'Current' : item.type === 'internship' ? 'Internship' : 'Education'}
+                        {badgeLabels[item.type]}
                       </span>
                     </div>
 

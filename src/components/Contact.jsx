@@ -27,7 +27,7 @@ export default function Contact() {
 
     try {
       // Using FormSubmit service for free form submissions
-      const response = await fetch('https://formspree.io/f/xvzepkyo', {
+      const response = await fetch('https://formspree.io/f/mqpkzlqa', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
