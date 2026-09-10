@@ -1,5 +1,5 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import TelegramQuizBotIllustration from './assets/TelegramQuizBotIllustration'
+import Nova from './assets/Nova'
 import SwiftCartIllustration from './assets/SwiftCartIllustration';
 
 
@@ -19,32 +19,32 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: 'Telegram Quiz Bot — Multi-Tenant Quiz Automation SaaS',
-      description: 'A multi-tenant SaaS platform automating Telegram quizzes, featuring secure JWT authentication and AI-powered MCQ extraction from images via Google Gemini. The platform seamlessly integrates a smart scheduling engine for recurring polls, a real-time analytics dashboard tracking per-student performance, and a dedicated leaderboard for daily and weekly rankings.',
-      tech: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Telegraf', 'Google Gemini API', 'JWT'],
-      image: (<TelegramQuizBotIllustration className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[100px] lg:h-[100px]" />),
-      link: 'https://telegram-quiz-bot-mu.vercel.app',
-      github: 'https://github.com/shivamdwivedi2442/telegram-quiz-bot',
+      title: 'NOVA — Team Productivity Platform',
+      description: 'A full-stack team productivity platform for planning and tracking projects, featuring Supabase authentication with PostgreSQL Row-Level Security and Redis-backed caching for instant load times. The platform seamlessly integrates a drag-and-drop kanban board for task management, an email-based team invitation system with role-based access control, and live progress tracking that updates automatically as tasks move across the board.',
+      tech: ['Next.js', 'React.js', 'Node.js', 'Supabase', 'PostgreSQL', 'Redis', 'Tailwind CSS'],
+      image: (<Nova className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[100px] lg:h-[100px]" />),
+      link: 'https://nova-assignment-tau.vercel.app',
+      github: 'https://github.com/shivamdwivedi2442/nova-assignment',
       featured: true
     },
     {
       id: 3,
+      title: 'Telegram Quiz Bot — Multi-Tenant Quiz Automation SaaS',
+      description: 'A multi-tenant SaaS platform automating Telegram quizzes, featuring secure JWT authentication and AI-powered MCQ extraction from images via Google Gemini. The platform seamlessly integrates a smart scheduling engine for recurring polls, a real-time analytics dashboard tracking per-student performance, and a dedicated leaderboard for daily and weekly rankings.',
+      tech: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Telegraf', 'Google Gemini API', 'JWT'],
+      image: '✈️',
+      link: 'https://telegram-quiz-bot-mu.vercel.app',
+      github: 'https://github.com/shivamdwivedi2442/telegram-quiz-bot',
+      featured: false
+    },
+    {
+      id: 4,
       title: 'Cine Hub — Movie Discovery Platform',
       description: 'Full-stack movie discovery web application integrating TMDB API for real-time trending, top-rated, and genre-based film data. Built dynamic industry-wise browsing (Hollywood, Bollywood, Tollywood, South Indian cinema) with animated capsule filters, server-side rendering for SEO (dynamic sitemaps, JSON-LD schema, Open Graph tags), and fully responsive UI with smooth micro-interactions across devices.',
       tech: ['Next.js', 'React', 'JavaScript', 'Tailwind CSS', 'Framer Motion', 'TMDB API'],
       image: '📺',
       link: 'https://cinehub-nu-two.vercel.app/',
       github: 'https://github.com/shivamdwivedi2442/movie-app',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Daily Ledger - Productivity & Task Management',
-      description: 'Developed a responsive and clean task-management web application designed to optimize daily workflow scheduling. Focused on creating an intuitive, clutter-free user interface utilizing semantic HTML5 structure, modular CSS layout, and efficient JavaScript DOM manipulation to manage tasks seamlessly.',
-      tech: ['React.js', 'Tailwind css', 'javascript', 'CSS3', 'Next.js'],
-      image: '📚',
-      link: 'https://to-do-app-umber-phi.vercel.app/',
-      github: 'https://github.com/shivamdwivedi2442/to-do-app',
       featured: false
     }
   ]
@@ -130,7 +130,7 @@ export default function Projects() {
                 </p>
 
                 <div className="flex flex-wrap gap-1 mb-4">
-                  {project.tech.slice(0, 3).map((tech) => (
+                  {project.tech.map((tech) => (
                     <span key={tech} className="text-xs font-mono px-2 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded">
                       {tech}
                     </span>
